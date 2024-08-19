@@ -11,3 +11,71 @@
     - Нажимем кнопку "TRY SIMPLE BATTLE"
   expected-result: |
     Игра без регистрации успешно создана
+
+- summary: |
+    Проверка успешной регистрации c email
+  requirement: |
+    При корректном заполнении формы регистрации происходит вход в систему
+  prerequisites: |
+    no prerequisites
+  test-data: |
+    - email - Daryaistest@tutamail.ocm
+    - пароль - 110VptA63d
+  steps:
+    - нажать кнопку "Sign up"
+    - вводим Nickname
+    - Вводим email
+    - Вводим пароль
+    - вводим пароль повторно
+    - Нажать кнопку "Submit"
+  expected-result: |
+    Пользователь успешно авторизован
+
+- summary: |
+    Проверка успешной регистрации с  Discord
+  requirement: |
+    При вводе правильного логина и пароля аккаунта Discord происходит вход в систему
+  prerequisites: |
+    - Пользователь должен иметь аккаунт Discord
+    - Пользователь авторизирован в Discord
+  test-data: |
+    no test-data
+  steps:
+    - нажать кнопку "Sign up"
+    - нажать кнопку "Sign in with Discord"
+    - Нажать кнопку "Authorize"
+  expected-result: |
+    Пользователь успешно авторизован c Discord
+
+- summary: |
+    Проверка успешной авторизации с GitHub
+  requirement: |
+    При вводе правильного логина и пароля аккаунта GitHub происходит вход в систему
+  prerequisites: |
+    - Пользователь должен иметь аккаунт GitHub
+    - Пользователь авторизирован в  GitHub
+  test-data: |
+    no test-data
+  steps:
+    - нажать кнопку "Sign up"
+    - нажать кнопку "Sign in with Github"
+    - Нажать кнопку "Sign in"
+  expected-result: |
+    Пользователь успешно авторизован с GitHub
+
+- summary: |
+    Проверка успешной авторизации
+  requirement: |
+    При вводе правильного email и пароля происходит вход в систему
+  prerequisites: |
+    Пользователь ранее должен зарегестироваться
+  test-data: |
+    - email - Daryaistest@tutamail.ocm
+    - пароль - 110VptA63d
+  steps:
+    - нажать кнопку "Sign in"
+    - Вводим email
+    - Вводим пароль
+    - Нажать кнопку "Submit"
+  expected-result: |
+    Пользователь успешно авторизован    
