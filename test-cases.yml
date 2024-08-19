@@ -1,0 +1,13 @@
+---
+- summary: |
+    Проверка создания игры без регистрации
+  requirement: |
+    При нажатии кнопки "TRY SIMPLE BATTLE" открывается интерфейс с задачей против бота
+  prerequisites: |
+    Пользователь не зарегестирован
+  test-data: |
+    no test-data
+  steps:
+    - Нажимем кнопку "TRY SIMPLE BATTLE"
+  expected-result: |
+    Игра без регистрации успешно создана
