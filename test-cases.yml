@@ -180,3 +180,72 @@
     - на главной странице нажимаем "History"
   expected-result: |
     История игр корректно отображается
+
+- summary: |
+    Проверка корректной работы таблицы лидеров
+  requirement: |
+    В таблице лидеров должны работать вкладки, список игроков должен быть отсортирован от большего рейтинга к меньшему
+  prerequisites:
+    - Пользователь авторизован
+    - В Leaderboard открыта вкладка week
+  test-data: |
+    no test-data
+  steps:
+    - на главной странице обращаем внимание на leaderboard
+    - переключаемся на вкладку month
+    - переключаемся на вкладку all
+  expected-result: |
+    Таблица лидеров отображается корректно 
+
+- summary: |
+    Проверка просмотра полной таблицы лидеров
+  requirement: |
+    При нажатии кнопки "Top list" открывается полная таблица лидеров
+  prerequisites: |
+    Пользователь авторизован
+  test-data: |
+    no test-data
+  steps:
+    - нажать кнопку "Top list"
+  expected-result: |
+    Открылась полная таблица лидеров
+
+- summary: |
+    Проверка создания игры с другом
+  requirement: |
+    При нажатии на кнопку "Create a game" можно выбрать "With a friend" и пригласить друга
+  prerequisites: |
+    - Пользоватеь авторизован
+    - Второй пользователь авторизован
+  test-data: |
+    - аккаунт Github
+    - второй аккаунт email - daryaistest@tutamail.com пароль - Qwerty1002
+  steps:
+    - Нажать кнопку "Create a game"
+    - В открывшемся окне выбрать желаемый уровень сложности
+    - Тип игры выбрать "With a friend"
+    - Время установить любое
+    - выбрать противника - daryatest
+    - задачу выбрать любую
+    - Нажимаем кнопку «Create invite»
+    - второй пользователь нажимает кнопку "Accept"
+  expected-result: |
+    Игра с другом успешно создана
+
+- summary: |
+    Проверка создания нового турнира
+  requirement: |
+    После заполениии формы "Create a new tournament" и нажатии на кнопку "Create" создается турнир
+  prerequisites: |
+    - Пользавотель авторизован 
+    - https://codebattle.hexlet.io/tournaments
+  test-data: |
+    - Name - My testy tournament
+    - Description - Markdown description for testing
+    - Event - 1
+    - остальные поля - по умолчанию
+  steps:
+    - Снизу страницы заполнить форму "Create a new tournament"
+    - нажать кнопку "Create"
+  expected-result: |
+    Создался новый турнир и появился в таблице турниров 
