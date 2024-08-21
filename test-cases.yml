@@ -78,4 +78,42 @@
     - Вводим пароль
     - Нажать кнопку "Submit"
   expected-result: |
-    Пользователь успешно авторизован    
+    Пользователь успешно авторизован
+
+ - summary: |
+     Проверка регистрации с невалидным nickname
+   requirement: |
+     При вводе невалидных символов в nickname регистрация невозможна и появляется сообщение 
+   prerequisites: |
+     Пользователь не авторизован
+   test-data: |
+     - nickname - Дарья
+     - email - Daryaistest@tutamail.ocm
+     - пароль - 110VptA63d
+   steps:
+     - нажать кнопку "Sign up"
+     - Вводим nickname
+     - Вводим email
+     - Вводим пароль
+     - Нажать кнопку "Submit"
+   expected-result: |
+     Появляется сообщение об ошибке
+
+- summary: |
+    Проверка регистрации с невалидным email
+  requirement: |
+    При вводе неправильного email регистрация невозможна и появляется сообщение 
+  prerequisites: |
+    Пользователь не авторизован
+  test-data: |
+    - nickname - darya
+    - email - notexistemail.com
+    - пароль - 110VptA63d
+  steps:
+    - нажать кнопку "Sign up"
+    - Вводим nickname
+    - Вводим email
+    - Вводим пароль
+    - Нажать кнопку "Submit"
+  expected-result: |
+    Появляется сообщение об ошибке       
