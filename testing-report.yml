@@ -1,0 +1,61 @@
+---
+- summary: |
+    Проверка создания игры с ботом без регистрации
+  status: pass
+
+- summary: |
+    Проверка регистрации c email
+  status: pass
+
+- summary: |
+    Проверка  регистрации с  Discord
+  status: pass
+
+- summary: |
+    Проверка  авторизации с GitHub
+  status: pass
+
+  - summary: |
+    Проверка успешной авторизации
+  status: pass
+
+- summary: |
+     Проверка регистрации с невалидным nickname
+  status: pass
+
+  - summary: |
+    Проверка регистрации с невалидным email
+  status: pass
+
+- summary: |
+    Проверка создания игры с ботом
+  status: pass
+
+  - summary: |
+    Проверка создания открытой игры 
+  status: pass
+
+- summary: |
+    Проверка просмотра турнирной таблицы
+  status: pass
+
+  - summary: |
+    Проверка просмотра истории игр
+  status: pass
+
+  - summary: |
+    Проверка корректной работы таблицы лидеров
+  status: pass
+
+- summary: |
+    Проверка просмотра полной таблицы лидеров
+  status: pass
+
+  - summary: |
+    Проверка создания игры с другом
+  status: pass
+
+  - summary: |
+    Проверка создания нового турнира
+  status: pass
+  
