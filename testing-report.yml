@@ -66,3 +66,7 @@
 - summary: |
     Отправка сообщений в чат
   status: pass
+
+- summary: |
+    Отправка сообщений в личный чат 
+  status: pass
