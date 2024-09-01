@@ -62,3 +62,7 @@
 - summary: |
     Присоединение к созданной игре
   status: pass
+
+- summary: |
+    Отправка сообщений в чат
+  status: pass
