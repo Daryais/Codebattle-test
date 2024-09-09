@@ -8,7 +8,7 @@
   test-data: |
     no test-data
   steps:
-    - Нажимем кнопку "TRY SIMPLE BATTLE"
+    - Нажать кнопку "TRY SIMPLE BATTLE"
   expected-result: |
     Игра без регистрации успешно создана
 
@@ -22,11 +22,11 @@
     - email - Daryaistest@tutamail.ocm
     - пароль - 110VptA63d
   steps:
-    - нажать кнопку "Sign up"
-    - вводим Nickname
-    - Вводим email
-    - Вводим пароль
-    - вводим пароль повторно
+    - Нажать кнопку "Sign up"
+    - Ввести Nickname
+    - Ввести email
+    - Ввести пароль
+    - Ввести пароль повторно
     - Нажать кнопку "Submit"
   expected-result: |
     Пользователь успешно авторизован
@@ -41,8 +41,8 @@
   test-data: |
     no test-data
   steps:
-    - нажать кнопку "Sign up"
-    - нажать кнопку "Sign in with Discord"
+    - Нажать кнопку "Sign up"
+    - Нажать кнопку "Sign in with Discord"
     - Нажать кнопку "Authorize"
   expected-result: |
     Пользователь успешно авторизован c Discord
@@ -57,8 +57,8 @@
   test-data: |
     no test-data
   steps:
-    - нажать кнопку "Sign up"
-    - нажать кнопку "Sign in with Github"
+    - Нажать кнопку "Sign up"
+    - Нажать кнопку "Sign in with Github"
     - Нажать кнопку "Sign in"
   expected-result: |
     Пользователь успешно авторизован с GitHub
@@ -73,9 +73,9 @@
     - email - Daryaistest@tutamail.ocm
     - пароль - 110VptA63d
   steps:
-    - нажать кнопку "Sign in"
-    - Вводим email
-    - Вводим пароль
+    - Нажать кнопку "Sign in"
+    - Ввести email
+    - Ввести пароль
     - Нажать кнопку "Submit"
   expected-result: |
     Пользователь успешно авторизован
@@ -91,10 +91,10 @@
     - email - Daryaistest@tutamail.ocm
     - пароль - 110VptA63d
   steps:
-    - нажать кнопку "Sign up"
-    - Вводим nickname
-    - Вводим email
-    - Вводим пароль
+    - Нажать кнопку "Sign up"
+    - Ввести nickname
+    - Ввести email
+    - Ввести пароль
     - Нажать кнопку "Submit"
   expected-result: |
     Появляется сообщение об ошибке
@@ -110,10 +110,10 @@
     - email - notexistemail.com
     - пароль - 110VptA63d
   steps:
-    - нажать кнопку "Sign up"
-    - Вводим nickname
-    - Вводим email
-    - Вводим пароль
+    - Нажать кнопку "Sign up"
+    - Ввести nickname
+    - Ввести email
+    - Ввести пароль
     - Нажать кнопку "Submit"
   expected-result: |
     Появляется сообщение об ошибке       
@@ -131,8 +131,8 @@
     - В открывшемся окне выбрать желаемый уровень сложности
     - Тип игры выбрать "With a bot"
     - Время установить любое
-    - задачу выбрать любую
-    - Нажимаем кнопку «Create battle»
+    - Задачу выбрать любую
+    - Нажать кнопку «Create battle»
   expected-result: |
     Игра с ботом успешно создана
 
@@ -149,8 +149,8 @@
     - В открывшемся окне выбрать любой уровень сложности
     - Тип игры выбрать "With other user"
     - Время установить любое
-    - задачу выбрать любую
-    - Нажимаем кнопку «Create battle»
+    - Задачу выбрать любую
+    - Нажать кнопку «Create battle»
   expected-result: |
     Игра создана и отображается в списке лобби
 
@@ -163,8 +163,8 @@
   test-data: |
     no test-data
   steps:
-    - на главной странице нажать "Tournaments"
-    - нажать "Tournaments Info"
+    - На главной странице нажать "Tournaments"
+    - Нажать "Tournaments Info"
   expected-result: |
     Турнирная таблица корректно отображается 
 
@@ -177,7 +177,7 @@
   test-data: |
     no test-data
   steps:
-    - на главной странице нажать "History"
+    - На главной странице нажать "History"
   expected-result: |
     История игр корректно отображается
 
@@ -190,9 +190,9 @@
   test-data: |
     no test-data
   steps:
-    - на главной странице обращаем внимание на leaderboard
-    - переключаемся на вкладку month
-    - переключаемся на вкладку all
+    - на главной странице обратить внимание на leaderboard
+    - Переключится на вкладку month
+    - Переключится  на вкладку all
   expected-result: |
     Таблица лидеров отображается корректно 
 
@@ -224,10 +224,10 @@
     - В открывшемся окне выбрать желаемый уровень сложности
     - Тип игры выбрать "With a friend"
     - Время установить любое
-    - выбрать противника - daryatest
-    - задачу выбрать любую
+    - Выбрать противника - daryatest
+    - Задачу выбрать любую
     - Нажать кнопку «Create invite»
-    - второй пользователь нажимает кнопку "Accept"
+    - Второй пользователь нажимает кнопку "Accept"
   expected-result: |
     Игра с другом успешно создана
 
@@ -245,7 +245,7 @@
     - остальные поля - по умолчанию
   steps:
     - Заполнить форму "Create a new tournament"
-    - нажать кнопку "Create"
+    - Нажать кнопку "Create"
   expected-result: |
     Создался новый турнир и появился в таблице турниров 
 
@@ -304,9 +304,9 @@
     No data
   steps:
     - В окне редактора нажать на кнопку с флагом
-    - Во всплывающем окне "Are you sure you want to give up?" нажать на кнопку Give up
+    - Во всплывающем окне нажать на кнопку Give up
   expected-result: |
-    Отображается всплывающее окно "If you read this you've lost the game" с анимацией и звуком
+    Отображается всплывающее окно с анимацией и звуком
 
 - summary: |
     Проверка отправки сообщений в игровом чате
@@ -332,6 +332,43 @@
     No data
   steps:
     - В окне редактора нажать на выпадающий список языков
-    - Выбирать любой язык
+    - Выбрать любой язык
   expected-result: |
     Язык в редакторе меняется на выбранный
+
+- summary: |
+    Проверка возможности сброса кода в окне редактора
+  requirement: |
+    Пользователь должен иметь возможность сбрасывать код
+  prerequisites:
+    Игра запущена
+    Набран код в редакторе
+  test-data: |
+    No data
+  steps:
+    - Нажать кнопку "Reset editor"   
+  expected-result: |
+     Код успешно сбросился 
+
+- summary: |
+    Проверка возможности выйграть
+  requirement: |
+    Игра должна завершаться победой с сообщением и звуковым оформлением
+  prerequisites: |
+    Игра запущена с ботом с задачей 1 сложности "Rect area" 
+    Выбран язык кода NodeJS
+  test-data: |
+    const _ = require("lodash");
+    const R = require("rambda");
+    
+    const solution = (width, length) => {
+    return width * length;
+    };
+    
+    module.exports = solution;
+  steps:
+    - Перенести в редакторкода решение задачи из test-data 
+    - Нажать на кнопку проверки Run
+  expected-result: |
+    Игра завершается победой, появляется сообщение, анимация и звуковое сопровождение
+
